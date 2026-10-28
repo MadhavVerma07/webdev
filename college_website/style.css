@@ -212,7 +212,7 @@ main {
     margin-bottom: 8px;
 }
 
-/* Faculty - Flexbox as required */
+
 .faculty-container {
     display: flex;
     justify-content: center;
@@ -350,6 +350,7 @@ tbody tr:hover {
     margin-bottom: 15px;
     border-left: 4px solid var(--accent-color);
     background-color: #edf7f5;
+    
 }
 
 /* Photo Gallery - CSS Grid as required */
