@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   All Products | ShopEase
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+  <script defer="" src="js/script.js">
+  </script>
+ </head>
+ <body>
+  <header class="site-header">
+   <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+     <span class="brand-mark">
+      S
+     </span>
+     ShopEase
+    </a>
+    <button aria-label="Toggle navigation" class="menu-toggle">
+     ☰
+    </button>
+    <nav class="main-nav">
+     <a href="index.html">
+      Home
+     </a>
+     <a class="active" href="products.html">
+      Products
+     </a>
+     <a href="about.html">
+      About Us
+     </a>
+     <a href="contact.html">
+      Contact Us
+     </a>
+    </nav>
+    <div class="nav-actions">
+     <a class="icon-link" href="products.html">
+      &telrec;
+     </a>
+     <button aria-label="Toggle dark mode" class="theme-toggle">
+      ☾
+     </button>
+     <a class="cart-link" href="cart.html">
+      🛒
+      <span class="cart-count">
+       0
+      </span>
+     </a>
+    </div>
+   </div>
+  </header>
+  <main class="container page-main">
+   <div class="page-heading">
+    <div>
+     <span class="eyebrow">
+      THE SHOP
+     </span>
+     <h1>
+      All Products
+     </h1>
+     <p>
+      Browse our latest finds and everyday favourites.
+     </p>
+    </div>
+    <div class="search-box">
+     <input aria-label="Search products" id="product-search" placeholder="Search products..." type="search"/>
+     <span>
+      &telrec;
+     </span>
+    </div>
+   </div>
+   <div class="shop-layout">
+    <aside class="filters">
+     <h3>
+      Categories
+     </h3>
+     <div class="filter-options" id="category-filters">
+      <button class="filter-btn selected" data-category="All">
+       All Products
+      </button>
+      <button class="filter-btn" data-category="Electronics">
+       Electronics
+      </button>
+      <button class="filter-btn" data-category="Fashion">
+       Fashion
+      </button>
+      <button class="filter-btn" data-category="Accessories">
+       Accessories
+      </button>
+      <button class="filter-btn" data-category="Footwear">
+       Footwear
+      </button>
+     </div>
+     <h3>
+      Price range
+     </h3>
+     <label for="price-range">
+      Up to
+      <strong id="price-label">
+       ₹10,000
+      </strong>
+     </label>
+     <input id="price-range" max="10000" min="500" step="250" type="range" value="10000"/>
+     <button class="btn btn-outline full-width" id="clear-filters">
+      Clear filters
+     </button>
+    </aside>
+    <section class="shop-results">
+     <div class="results-toolbar">
+      <span id="results-count">
+       Showing products
+      </span>
+      <label>
+       Sort by
+       <select id="sort-products">
+        <option value="featured">
+         Featured
+        </option>
+        <option value="price-low">
+         Price: low to high
+        </option>
+        <option value="price-high">
+         Price: high to low
+        </option>
+        <option value="name">
+         Name
+        </option>
+       </select>
+      </label>
+     </div>
+     <div class="product-grid" data-products="">
+     </div>
+     <p class="empty-state hidden" id="empty-state">
+      No products match your filters. Try a different search.
+     </p>
+    </section>
+   </div>
+  </main>
+  <footer class="site-footer">
+   <div class="container footer-bottom">
+    <span>
+     &copy;
+     <span data-year="">
+     </span>
+     ShopEase
+    </span>
+    <span>
+     <a href="contact.html">
+      Need help? Contact us
+     </a>
+    </span>
+   </div>
+  </footer>
+ </body>
+</html>
+
